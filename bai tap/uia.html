@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Cá Nhân</title>
+  
+  <link rel="stylesheet" href="aic.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">Blog Cá Nhân</a>
+
+      <!-- mobile menu  -->
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle" aria-hidden="true" title="Mở menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Menu chính">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Bài viết</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Chào mừng đến với blog của tôi</h1>
+      <p>Chia sẻ kiến thức lập trình.</p>
+    </section>
+
+    <div class="content-grid">
+      <section class="posts" aria-label="Danh sách bài viết">
+        <h2>Bài viết mới nhất</h2>
+
+        
+        <article class="post-card featured" aria-labelledby="post-1-title">
+          <img class="post-thumb" src="https://vtc.edu.vn/wp-content/uploads/2022/12/thumbnail-lap-trinh-web-la-gi.jpg" alt="Ảnh minh họa bài viết nổi bật">
+          <div class="post-body">
+            <header>
+              <h3 id="post-1-title" class="post-title">Học lập trình web từ con số 0</h3>
+              <time datetime="2025-09-01" class="post-date">01 Thg 9, 2025</time>
+            </header>
+            <p class="post-excerpt">Bắt đầu từ HTML/CSS, rồi đến JavaScript — lộ trình, tài nguyên và mẹo học hiệu quả cho người mới. Bài viết này kèm ví dụ thực tế và checklist để bạn làm theo từng bước.</p>
+            <a class="read-more" href="#" >Đọc tiếp -></a>
+          </div>
+        </article>
+
+        
+        <article class="post-card" aria-labelledby="post-2-title">
+          <header>
+            <h3 id="post-2-title" class="post-title">Kinh nghiệm phỏng vấn IT</h3>
+            <time datetime="2025-08-15" class="post-date">15 Thg 8, 2025</time>
+          </header>
+          <p class="post-excerpt">Chuẩn bị CV, chuẩn bị code test, và những câu hỏi thường gặp khi phỏng vấn vị trí lập trình — rút gọn và dễ thực hành.</p>
+          <a class="read-more" href="#">Đọc tiếp -></a>
+        </article>
+
+        <article class="post-card" aria-labelledby="post-3-title">
+          <header>
+            <h3 id="post-3-title" class="post-title">Mẹo tối ưu hiệu suất trang web</h3>
+            <time datetime="2025-07-10" class="post-date">10 Thg 7, 2025</time>
+          </header>
+          <p class="post-excerpt">Các bước đơn giản để giảm thời gian tải và cải thiện trải nghiệm người dùng — từ nén ảnh đến lazy-loading.</p>
+          <a class="read-more" href="#">Đọc tiếp -></a>
+        </article>
+
+      </section>
+
+      <aside class="sidebar" aria-label="Thanh bên">
+        <div class="widget about">
+          <img class="author-thumb" src="https://static.vecteezy.com/system/resources/previews/013/775/007/original/v-letter-icon-template-vector.jpg" alt="Ảnh tác giả">
+          <h3>Giới thiệu ngắn</h3>
+          <p>Mình là Lý Thế Vinh, đây là trang web của mình.</p>
+        </div>
+
+        <div class="widget categories">
+          <h3>Chuyên mục</h3>
+          <ul>
+            <li><a href="#">Lập trình</a></li>
+            <li><a href="#">DevOps</a></li>
+            <li><a href="#">Kinh nghiệm phỏng vấn</a></li>
+            <li><a href="#">Tài nguyên học tập</a></li>
+          </ul>
+        </div>
+
+        <div class="widget subscribe">
+          <h3>Đăng ký</h3>
+          <p>Nhập email để nhận bài viết mới:</p>
+          <form onsubmit="event.preventDefault(); alert('Thành Công');" class="subscribe-form">
+            <input type="email" placeholder="xxxx@.com" required aria-label="Email đăng ký" />
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Lý Thế Vinh — lythevinh61@gmail.com</p>
+      <div class="socials" >
+        <a href="https://www.facebook.com/thevinh.ly.391"  target="_blank" >
+          
+          <img
+            src="https://th.bing.com/th/id/R.30b680f7323ad852bdd859f67ed5f952?rik=BUChTqzCmHdjbg&riu=http%3a%2f%2fsguru.org%2fwp-content%2fuploads%2f2018%2f02%2ficon-facebook-black.png&ehk=ZDm5BxOPIvzQb0K7841ckac7K958nw9U0EOK%2byVHRBs%3d&risl=&pid=ImgRaw&r=0"
+            width="36"
+            height="36"
+            alt="Facebook"
+            class="footer-logo"
+            decoding="async"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
